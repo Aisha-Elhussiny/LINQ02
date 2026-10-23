@@ -36,6 +36,19 @@ namespace LINQ02
             //}
 
             #endregion
+            #region Q3  Order by price, then take products while price is below 25.
+
+            //var productsBelow25 = Source.ProductList
+            //    .OrderBy(p => p.UnitPrice)
+            //    .TakeWhile(p => p.UnitPrice < 25)
+            //    .Select(p => new { p.ProductName, p.UnitPrice });
+
+            //foreach (var product in productsBelow25)
+            //{
+            //    Console.WriteLine(product);
+            //}
+
+            #endregion
 
 
         }
