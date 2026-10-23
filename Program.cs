@@ -69,6 +69,19 @@ namespace LINQ02
 
             #endregion
 
+            #region Q6  Group products by Category and print each group's count.
+
+            //var productGroups = Source.ProductList
+            //    .GroupBy(p => p.Category)
+            //    .Select(g => new { Category = g.Key, Count = g.Count() });
+
+            //foreach (var group in productGroups)
+            //{
+            //    Console.WriteLine(group);
+            //}
+
+            #endregion
+
 
         }
     }
