@@ -223,6 +223,18 @@ namespace LINQ02
 
             #endregion
 
+            #region Q17  Get the first product above 500. Return null if no matching product exists.
+
+         
+            //var firstProductAbove500 = Source.ProductList
+            //    .FirstOrDefault(p => p.UnitPrice > 500);
+            ////  hytl3 null if no matching product is found
+
+            //    Console.WriteLine(firstProductAbove500);
+           
+
+            #endregion
+
 
 
 
