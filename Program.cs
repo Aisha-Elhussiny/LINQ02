@@ -147,6 +147,19 @@ namespace LINQ02
             //Console.WriteLine($"Total Stock: {totalStock}");
 
             #endregion
+            #region Q11 Find the cheapest and most expensive prices.
+
+
+            //var cheapestPrice = Source.ProductList
+            //    .Min(p => p.UnitPrice);
+
+            //var highestPrice = Source.ProductList
+            //    .Max(p => p.UnitPrice);
+
+            //Console.WriteLine($"Cheapest Price: {cheapestPrice}");
+            //Console.WriteLine($"Most Expensive Price: {highestPrice}");
+
+            #endregion
 
 
 
