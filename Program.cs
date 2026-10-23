@@ -173,6 +173,21 @@ namespace LINQ02
             //}
 
             #endregion
+            #region Q13 Get IDs in setA but not in setB.
+
+
+            //int[] setA = { 1, 3, 5, 7, 9, 11, 13 };
+            //int[] setB = { 3, 6, 9, 12, 15, 13 };
+
+            //var idsOnlyInA = setA.Except(setB);
+
+            //foreach (var id in idsOnlyInA)
+            //{
+            //    Console.WriteLine(id);
+            //}
+            //ay 7aga mawgoda f set b msh httl3 m3ana
+
+            #endregion
 
 
 
