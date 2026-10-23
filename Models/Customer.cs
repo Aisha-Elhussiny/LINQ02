@@ -1,4 +1,4 @@
-﻿namespace LINQ02.DataSource
+﻿namespace LINQ02.Models
 {
 	public class Customer
 	{

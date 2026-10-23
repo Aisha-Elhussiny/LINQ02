@@ -1,6 +1,7 @@
-﻿namespace LINQ02.DataSource
+﻿namespace LINQ02.Models
+
 {
-	public class Product
+    public class Product
 	{
 		public int ProductID { get; set; }
 		public string ProductName { get; set; }
