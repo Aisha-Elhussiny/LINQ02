@@ -188,6 +188,22 @@ namespace LINQ02
             //ay 7aga mawgoda f set b msh httl3 m3ana
 
             #endregion
+            #region Q14 Get countries in list1 but not list2 (case-insensitive).
+
+
+            //string[] list1 = { "Germany", "France", "UK", "Spain" };
+            //string[] list2 = { "france", "SPAIN", "Italy" };
+
+            //var countriesOnlyInList1 = list1
+            //    .Except(list2, StringComparer.OrdinalIgnoreCase);
+            ////StringComparer.OrdinalIgnoreCase 3shan y3ml compare b case insensitive (ignore case)
+
+            //foreach (var country in countriesOnlyInList1)
+            //{
+            //    Console.WriteLine(country);
+            //}
+
+            #endregion
 
 
 
