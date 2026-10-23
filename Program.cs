@@ -10,17 +10,30 @@ namespace LINQ02
         {
             #region Q1 Get the top 3 most expensive products.
 
-            
 
-            var mostExpensiveProducts = Source.ProductList
-                .OrderByDescending(p => p.UnitPrice)
-                .Take(3)
-                .Select(p => new { p.ProductName, p.UnitPrice });
 
-            foreach (var product in mostExpensiveProducts)
-            {
-                Console.WriteLine(product);
-            }
+            //var mostExpensiveProducts = Source.ProductList
+            //    .OrderByDescending(p => p.UnitPrice)
+            //    .Take(3)
+            //    .Select(p => new { p.ProductName, p.UnitPrice });
+
+            //foreach (var product in mostExpensiveProducts)
+            //{
+            //    Console.WriteLine(product);
+            //}
+
+            #endregion
+            #region Q2 Show page 2 with a page size of 5.
+
+            //var secondPage = Source.ProductList
+            //    .Skip(5)
+            //    .Take(5)
+            //    .Select(p => new { p.ProductID, p.ProductName });
+
+            //foreach (var product in secondPage)
+            //{
+            //    Console.WriteLine(product);
+            //}
 
             #endregion
 
