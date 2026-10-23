@@ -49,6 +49,16 @@ namespace LINQ02
             //}
 
             #endregion
+            #region Q4  Check whether all Seafood products are in stock.
+
+            //bool allSeafoodInStock = Source.ProductList
+            //    .Where(p => p.Category == "Seafood")
+            //    .All(p => p.UnitsInStock > 0);
+
+            //Console.WriteLine(allSeafoodInStock);
+            ////kolhom in stock 
+
+            #endregion
 
 
         }
