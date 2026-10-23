@@ -115,7 +115,7 @@ namespace LINQ02
             #endregion
 
             #region Q9  Use query syntax to group customers by Country. Return Country, customer count and total order value.
-           
+
 
             //var customersByCountry =
             //    from customer in Source.CustomerList
@@ -135,9 +135,19 @@ namespace LINQ02
             //    Console.WriteLine(group);
             //}
 
-         
+
 
             #endregion
+
+            #region Q10 Calculate the total number of units in stock.
+
+            //var totalStock = Source.ProductList
+            //    .Sum(p => p.UnitsInStock);
+
+            //Console.WriteLine($"Total Stock: {totalStock}");
+
+            #endregion
+
 
 
 
