@@ -100,6 +100,20 @@ namespace LINQ02
 
             #endregion
 
+            #region Q8 Find categories containing more than 3 products.
+
+            //var categoriesWithManyProducts = Source.ProductList
+            //    .GroupBy(p => p.Category)
+            //    .Where(p => p.Count() > 3)
+            //    .Select(p => p.Key);
+
+            //foreach (var category in categoriesWithManyProducts)
+            //{
+            //    Console.WriteLine(category);
+            //}
+
+            #endregion
+
 
         }
     }
