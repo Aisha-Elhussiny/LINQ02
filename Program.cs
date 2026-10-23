@@ -114,6 +114,32 @@ namespace LINQ02
 
             #endregion
 
+            #region Q9  Use query syntax to group customers by Country. Return Country, customer count and total order value.
+           
+
+            //var customersByCountry =
+            //    from customer in Source.CustomerList
+            //    group customer by customer.Country into countryGroup
+            //    select new
+            //    {
+            //        Country = countryGroup.Key,
+            //        Count = countryGroup.Count(),
+            //        TotalOrderValue = countryGroup
+            //            .SelectMany(customer => customer.Orders)
+            //            .Sum(order => order.Total)
+            //    };
+
+            //foreach (var group in customersByCountry)
+            //{
+
+            //    Console.WriteLine(group);
+            //}
+
+         
+
+            #endregion
+
+
 
         }
     }
