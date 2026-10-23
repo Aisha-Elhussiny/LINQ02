@@ -81,6 +81,24 @@ namespace LINQ02
             //}
 
             #endregion
+            #region Q7 Group by Category and project only product names.
+
+            //var productNameGroups = Source.ProductList
+            //    .GroupBy(p => p.Category, p => p.ProductName);
+
+            //foreach (var group in productNameGroups)
+            //{
+            //    Console.WriteLine($"Category: {group.Key}");
+
+            //    foreach (var name in group)
+            //    {
+            //        Console.WriteLine(name);
+            //    }
+
+            //    Console.WriteLine();
+            //}
+
+            #endregion
 
 
         }
