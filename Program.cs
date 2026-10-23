@@ -59,6 +59,15 @@ namespace LINQ02
             ////kolhom in stock 
 
             #endregion
+            #region Q5  Check whether the ID list contains 9.
+
+            //int[] ids = { 3, 9, 13, 18 };
+
+            //bool contains = ids.Contains(9);
+
+            //Console.WriteLine(contains);
+
+            #endregion
 
 
         }
