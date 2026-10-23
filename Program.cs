@@ -204,6 +204,16 @@ namespace LINQ02
             //}
 
             #endregion
+            #region Q15 Create a dictionary keyed by ProductID. Retrieve the product with ID 18.
+
+
+            //var productsDictionary = Source.ProductList
+            //    .ToDictionary(p => p.ProductID);
+            ////da kda key
+
+            //Console.WriteLine(productsDictionary[18]);
+
+            #endregion
 
 
 
