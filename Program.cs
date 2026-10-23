@@ -160,6 +160,19 @@ namespace LINQ02
             //Console.WriteLine($"Most Expensive Price: {highestPrice}");
 
             #endregion
+            #region Q12 Get distinct product categories.
+
+
+            //var distinctCategories = Source.ProductList
+            //    .Select(p => p.Category)
+            //    .Distinct();
+
+            //foreach (var category in distinctCategories)
+            //{
+            //    Console.WriteLine(category);
+            //}
+
+            #endregion
 
 
 
