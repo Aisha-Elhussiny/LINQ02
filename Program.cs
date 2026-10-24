@@ -259,6 +259,27 @@ namespace LINQ02
 
             #endregion
 
+            #region Q20 Concatenate the first 3 product names . with the first 3 customer names.
+
+            //var firstProductNames = Source.ProductList
+            //    .Take(3)
+            //    .Select(p => p.ProductName);
+
+            //var firstCustomerNames = Source.CustomerList
+            //    .Take(3)
+            //    .Select(c => c.CustomerName);
+
+            //var combinedNames = firstProductNames
+            //    .Concat(firstCustomerNames);
+
+            //foreach (var name in combinedNames)
+            //{
+            //    Console.WriteLine(name);
+            //}
+            ////msh 3arfa ana fahma sah wla la bs law 3mltohm f single line hyb2a kda pair w hstkhdm zip w ehna hna 3ayzen concat f atmna ab2a fahma sah w el 7l ykon sah 
+
+            #endregion
+
 
 
 
