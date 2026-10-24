@@ -279,6 +279,22 @@ namespace LINQ02
             ////msh 3arfa ana fahma sah wla la bs law 3mltohm f single line hyb2a kda pair w hstkhdm zip w ehna hna 3ayzen concat f atmna ab2a fahma sah w el 7l ykon sah 
 
             #endregion
+            #region Q21  Pair products and customers by position.
+
+
+            //var pairs = Source.ProductList
+            //    .Zip(
+            //        Source.CustomerList,
+            //        (product, customer) =>
+            //            $"{product.ProductName} == sold to == {customer.CustomerName}"
+            //    );
+
+            //foreach (var pair in pairs)
+            //{
+            //    Console.WriteLine(pair);
+            //}
+
+            #endregion
 
 
 
