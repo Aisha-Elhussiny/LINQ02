@@ -225,13 +225,26 @@ namespace LINQ02
 
             #region Q17  Get the first product above 500. Return null if no matching product exists.
 
-         
+
             //var firstProductAbove500 = Source.ProductList
             //    .FirstOrDefault(p => p.UnitPrice > 500);
             ////  hytl3 null if no matching product is found
 
             //    Console.WriteLine(firstProductAbove500);
-           
+
+
+            #endregion
+            #region Q18 Generate the multiplication table for 7.
+
+
+            //var multiplicationTable = Enumerable.Range(1, 10)
+            //    .Select(number => $"7 x {number} = {7 * number}");
+            ////btbd2 mn 1 l 10 w bt3ml multiply b 7 w btktb el result f string
+            
+            //foreach (var row in multiplicationTable)
+            //{
+            //    Console.WriteLine(row);
+            //}
 
             #endregion
 
