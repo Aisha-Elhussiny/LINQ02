@@ -1,6 +1,6 @@
-﻿namespace LINQ02.DataSource
+﻿namespace LINQ02.Models
 {
-	public class Order
+    public class Order
 	{
 		public int OrderID { get; set; }
 		public DateTime OrderDate { get; set; }

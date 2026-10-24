@@ -1,6 +1,7 @@
-﻿namespace LINQ02.DataSource
+﻿namespace LINQ02.Models
+
 {
-	public class Student
+    public class Student
 	{
 		public string Name { get; set; }
 		public int Grade { get; set; }

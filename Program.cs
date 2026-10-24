@@ -1,11 +1,304 @@
-﻿namespace LINQ02
+﻿using LINQ.DataSources;
+using System.Linq;
+
+
+namespace LINQ02
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            #region Q1 Get the top 3 most expensive products.
 
-            
+
+
+            //var mostExpensiveProducts = Source.ProductList
+            //    .OrderByDescending(p => p.UnitPrice)
+            //    .Take(3)
+            //    .Select(p => new { p.ProductName, p.UnitPrice });
+
+            //foreach (var product in mostExpensiveProducts)
+            //{
+            //    Console.WriteLine(product);
+            //}
+
+            #endregion
+            #region Q2 Show page 2 with a page size of 5.
+
+            //var secondPage = Source.ProductList
+            //    .Skip(5)
+            //    .Take(5)
+            //    .Select(p => new { p.ProductID, p.ProductName });
+
+            //foreach (var product in secondPage)
+            //{
+            //    Console.WriteLine(product);
+            //}
+
+            #endregion
+            #region Q3  Order by price, then take products while price is below 25.
+
+            //var productsBelow25 = Source.ProductList
+            //    .OrderBy(p => p.UnitPrice)
+            //    .TakeWhile(p => p.UnitPrice < 25)
+            //    .Select(p => new { p.ProductName, p.UnitPrice });
+
+            //foreach (var product in productsBelow25)
+            //{
+            //    Console.WriteLine(product);
+            //}
+
+            #endregion
+            #region Q4  Check whether all Seafood products are in stock.
+
+            //bool allSeafoodInStock = Source.ProductList
+            //    .Where(p => p.Category == "Seafood")
+            //    .All(p => p.UnitsInStock > 0);
+
+            //Console.WriteLine(allSeafoodInStock);
+            ////kolhom in stock 
+
+            #endregion
+            #region Q5  Check whether the ID list contains 9.
+
+            //int[] ids = { 3, 9, 13, 18 };
+
+            //bool contains = ids.Contains(9);
+
+            //Console.WriteLine(contains);
+
+            #endregion
+
+            #region Q6  Group products by Category and print each group's count.
+
+            //var productGroups = Source.ProductList
+            //    .GroupBy(p => p.Category)
+            //    .Select(g => new { Category = g.Key, Count = g.Count() });
+
+            //foreach (var group in productGroups)
+            //{
+            //    Console.WriteLine(group);
+            //}
+
+            #endregion
+            #region Q7 Group by Category and project only product names.
+
+            //var productNameGroups = Source.ProductList
+            //    .GroupBy(p => p.Category, p => p.ProductName);
+
+            //foreach (var group in productNameGroups)
+            //{
+            //    Console.WriteLine($"Category: {group.Key}");
+
+            //    foreach (var name in group)
+            //    {
+            //        Console.WriteLine(name);
+            //    }
+
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Q8 Find categories containing more than 3 products.
+
+            //var categoriesWithManyProducts = Source.ProductList
+            //    .GroupBy(p => p.Category)
+            //    .Where(p => p.Count() > 3)
+            //    .Select(p => p.Key);
+
+            //foreach (var category in categoriesWithManyProducts)
+            //{
+            //    Console.WriteLine(category);
+            //}
+
+            #endregion
+
+            #region Q9  Use query syntax to group customers by Country. Return Country, customer count and total order value.
+
+
+            //var customersByCountry =
+            //    from customer in Source.CustomerList
+            //    group customer by customer.Country into countryGroup
+            //    select new
+            //    {
+            //        Country = countryGroup.Key,
+            //        Count = countryGroup.Count(),
+            //        TotalOrderValue = countryGroup
+            //            .SelectMany(customer => customer.Orders)
+            //            .Sum(order => order.Total)
+            //    };
+
+            //foreach (var group in customersByCountry)
+            //{
+
+            //    Console.WriteLine(group);
+            //}
+
+
+
+            #endregion
+
+            #region Q10 Calculate the total number of units in stock.
+
+            //var totalStock = Source.ProductList
+            //    .Sum(p => p.UnitsInStock);
+
+            //Console.WriteLine($"Total Stock: {totalStock}");
+
+            #endregion
+            #region Q11 Find the cheapest and most expensive prices.
+
+
+            //var cheapestPrice = Source.ProductList
+            //    .Min(p => p.UnitPrice);
+
+            //var highestPrice = Source.ProductList
+            //    .Max(p => p.UnitPrice);
+
+            //Console.WriteLine($"Cheapest Price: {cheapestPrice}");
+            //Console.WriteLine($"Most Expensive Price: {highestPrice}");
+
+            #endregion
+            #region Q12 Get distinct product categories.
+
+
+            //var distinctCategories = Source.ProductList
+            //    .Select(p => p.Category)
+            //    .Distinct();
+
+            //foreach (var category in distinctCategories)
+            //{
+            //    Console.WriteLine(category);
+            //}
+
+            #endregion
+            #region Q13 Get IDs in setA but not in setB.
+
+
+            //int[] setA = { 1, 3, 5, 7, 9, 11, 13 };
+            //int[] setB = { 3, 6, 9, 12, 15, 13 };
+
+            //var idsOnlyInA = setA.Except(setB);
+
+            //foreach (var id in idsOnlyInA)
+            //{
+            //    Console.WriteLine(id);
+            //}
+            //ay 7aga mawgoda f set b msh httl3 m3ana
+
+            #endregion
+            #region Q14 Get countries in list1 but not list2 (case-insensitive).
+
+
+            //string[] list1 = { "Germany", "France", "UK", "Spain" };
+            //string[] list2 = { "france", "SPAIN", "Italy" };
+
+            //var countriesOnlyInList1 = list1
+            //    .Except(list2, StringComparer.OrdinalIgnoreCase);
+            ////StringComparer.OrdinalIgnoreCase 3shan y3ml compare b case insensitive (ignore case)
+
+            //foreach (var country in countriesOnlyInList1)
+            //{
+            //    Console.WriteLine(country);
+            //}
+
+            #endregion
+            #region Q15 Create a dictionary keyed by ProductID. Retrieve the product with ID 18.
+
+
+            //var productsDictionary = Source.ProductList
+            //    .ToDictionary(p => p.ProductID);
+            ////da kda key
+
+            //Console.WriteLine(productsDictionary[18]);
+
+            #endregion
+            #region Q16 Get the first product with a price greater than 50.
+
+            //var firstProductAbove50 = Source.ProductList
+            //    .First(p => p.UnitPrice > 50);
+
+            //Console.WriteLine(firstProductAbove50);
+
+            #endregion
+
+            #region Q17  Get the first product above 500. Return null if no matching product exists.
+
+
+            //var firstProductAbove500 = Source.ProductList
+            //    .FirstOrDefault(p => p.UnitPrice > 500);
+            ////  hytl3 null if no matching product is found
+
+            //    Console.WriteLine(firstProductAbove500);
+
+
+            #endregion
+            #region Q18 Generate the multiplication table for 7.
+
+
+            //var multiplicationTable = Enumerable.Range(1, 10)
+            //    .Select(number => $"7 x {number} = {7 * number}");
+            ////btbd2 mn 1 l 10 w bt3ml multiply b 7 w btktb el result f string
+
+            //foreach (var row in multiplicationTable)
+            //{
+            //    Console.WriteLine(row);
+            //}
+
+            #endregion
+            #region Q19 Generate even numbers between 1 and 30.
+
+            //var evenNumbers = Enumerable.Range(1, 30)
+            //    .Where(number => number % 2 == 0);
+
+            //foreach (var number in evenNumbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+
+            #endregion
+
+            #region Q20 Concatenate the first 3 product names . with the first 3 customer names.
+
+            //var firstProductNames = Source.ProductList
+            //    .Take(3)
+            //    .Select(p => p.ProductName);
+
+            //var firstCustomerNames = Source.CustomerList
+            //    .Take(3)
+            //    .Select(c => c.CustomerName);
+
+            //var combinedNames = firstProductNames
+            //    .Concat(firstCustomerNames);
+
+            //foreach (var name in combinedNames)
+            //{
+            //    Console.WriteLine(name);
+            //}
+            ////msh 3arfa ana fahma sah wla la bs law 3mltohm f single line hyb2a kda pair w hstkhdm zip w ehna hna 3ayzen concat f atmna ab2a fahma sah w el 7l ykon sah 
+
+            #endregion
+            #region Q21  Pair products and customers by position.
+
+
+            //var pairs = Source.ProductList
+            //    .Zip(
+            //        Source.CustomerList,
+            //        (product, customer) =>
+            //            $"{product.ProductName} == sold to == {customer.CustomerName}"
+            //    );
+
+            //foreach (var pair in pairs)
+            //{
+            //    Console.WriteLine(pair);
+            //}
+
+            #endregion
+
+
+
+
         }
     }
 }
