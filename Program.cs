@@ -240,10 +240,21 @@ namespace LINQ02
             //var multiplicationTable = Enumerable.Range(1, 10)
             //    .Select(number => $"7 x {number} = {7 * number}");
             ////btbd2 mn 1 l 10 w bt3ml multiply b 7 w btktb el result f string
-            
+
             //foreach (var row in multiplicationTable)
             //{
             //    Console.WriteLine(row);
+            //}
+
+            #endregion
+            #region Q19 Generate even numbers between 1 and 30.
+
+            //var evenNumbers = Enumerable.Range(1, 30)
+            //    .Where(number => number % 2 == 0);
+
+            //foreach (var number in evenNumbers)
+            //{
+            //    Console.WriteLine(number);
             //}
 
             #endregion
